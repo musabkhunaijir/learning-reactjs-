@@ -6,15 +6,16 @@ import "./show-users.css";
 export function GetUsers() {
   let [usersFromJsonApi, setUsers] = useState([]);
 
-  const fetchUsers = async () => {
-    usersFromJsonApi = await axios.get(
-      "https://jsonplaceholder.typicode.com/users"
-    );
-
-    setUsers(usersFromJsonApi.data);
-  };
-
+  // fetch users from the API (effect)
   useEffect(() => {
+    const fetchUsers = async () => {
+      usersFromJsonApi = await axios.get(
+        "https://jsonplaceholder.typicode.com/users"
+      );
+
+      setUsers(usersFromJsonApi.data);
+    };
+
     fetchUsers();
   });
 
@@ -30,7 +31,7 @@ export function GetUsers() {
 
   return (
     <div id="users-component">
-      <h3>get all user</h3>
+      <h3>All users:</h3>
 
       <div id="users-table">
         <table>
