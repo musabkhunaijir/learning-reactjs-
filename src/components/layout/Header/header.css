@@ -1,0 +1,12 @@
+#auth {
+    margin: 0;
+    background-color: red;
+    float: right;
+    color:yellow;
+}
+
+#auth li {
+    float: right;
+    list-style: none;
+    margin: 10px;
+}

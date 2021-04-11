@@ -1,0 +1,12 @@
+#body-component {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: red;
+  width: 1385px;
+  height: 630px;
+  border: 10px dotted black;
+  margin-top: -630px;
+  margin-left: 150px;
+  padding: 10px;
+}

@@ -1,0 +1,18 @@
+#side-bar-component {
+  width: 150px;
+  height: 630px;
+  border: 10px solid red;
+  background-color: #eee;
+}
+
+#side-bar-list {
+  list-style: none;
+  padding: 0;
+}
+
+#side-bar-list li {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+}
