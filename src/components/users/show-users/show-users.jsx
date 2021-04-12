@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import * as axios from "axios";
 
 import "./show-users.css";
+import { AddNewUser } from "../..";
 
 export function GetUsers() {
   let [usersFromJsonApi, setUsers] = useState([]);
@@ -31,6 +32,8 @@ export function GetUsers() {
 
   return (
     <div id="users-component">
+      <AddNewUser />
+
       <h3>All users:</h3>
 
       <div id="users-table">
