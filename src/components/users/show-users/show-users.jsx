@@ -47,7 +47,7 @@ export function GetUsers() {
       <h3>All users:</h3>
 
       <div id="users-table">
-        <table className="table">
+        <table className="table table-striped">
           <thead>
             <tr>
               <th scope="col">id</th>
