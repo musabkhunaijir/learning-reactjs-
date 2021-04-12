@@ -26,6 +26,16 @@ export function GetUsers() {
       <tr key={user.id}>
         <th scope="row">{user.id}</th>
         <td>{user.name}</td>
+        <td id="options-column">
+          <i className="fas fa-edit"></i>
+
+          <a
+            target="_blank"
+            href={`https://jsonplaceholder.typicode.com/users/${user.id}`}
+          >
+            <i className="fas fa-info-circle"></i>
+          </a>
+        </td>
       </tr>
     );
   });
@@ -42,6 +52,7 @@ export function GetUsers() {
             <tr>
               <th scope="col">id</th>
               <th scope="col">name</th>
+              <th scope="col">...</th>
             </tr>
           </thead>
 
