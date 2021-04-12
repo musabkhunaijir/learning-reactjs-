@@ -24,7 +24,7 @@ export function GetUsers() {
   usersFromJsonApi.map((user) => {
     usersRowsData.push(
       <tr key={user.id}>
-        <td>{user.id}</td>
+        <th scope="row">{user.id}</th>
         <td>{user.name}</td>
       </tr>
     );
@@ -37,11 +37,11 @@ export function GetUsers() {
       <h3>All users:</h3>
 
       <div id="users-table">
-        <table>
+        <table className="table">
           <thead>
             <tr>
-              <td>id</td>
-              <td>name</td>
+              <th scope="col">id</th>
+              <th scope="col">name</th>
             </tr>
           </thead>
 
